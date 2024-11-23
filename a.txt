@@ -1,0 +1,16 @@
+title Sequence diagram for 
+
+participant Teacher
+participant Student
+participant System
+
+
+Student->System:login
+Teacher-> System:login
+System->Teacher:Assign students
+Teacher->Student:Assign Tasks
+Student->Teacher:Submit tasks
+Student->Teacher:ask acknowledgment
+Student->System: submit the TA FORM
+
+
