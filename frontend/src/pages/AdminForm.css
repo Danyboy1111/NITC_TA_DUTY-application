@@ -1,0 +1,82 @@
+.verification-page {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+.verification-page h2 {
+    font-size: 2.2rem;
+    color: #37474f; /* Darker blue-gray for header text */
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.student-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.student-card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.student-card h3 {
+    font-size: 1.5rem;
+    color: #1e88e5; /* Primary blue for student names */
+    margin-bottom: 12px;
+}
+
+.student-card p {
+    font-size: 1rem;
+    color: #546e7a; /* Muted gray for additional details */
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Verify button styling */
+.verify-button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green for unverified button */
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.verify-button:hover:not(.verified) {
+    background-color: #43A047;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Verified button styling */
+.verify-button.verified {
+    background-color: #757575; /* Gray for verified button */
+    cursor: default;
+}
+
+/* Center alignment for minimal data layout */
+.verification-page h2,
+.student-card,
+.student-card-container {
+    margin: auto;
+}

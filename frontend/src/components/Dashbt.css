@@ -1,0 +1,105 @@
+/* Dashbt.css */
+
+.teacher-dashboard {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.teacher-dashboard h2 {
+    font-size: 2em;
+    color: #4a90e2;
+    margin-bottom: 1em;
+}
+
+.teacher-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0.5em 0;
+    border: 3px solid #4a90e2;
+}
+
+.dashboard-section {
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+    background-color: #357ABD;
+}
+
+.student-list {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.student-card {
+    width: 180px;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.student-card:hover {
+    transform: scale(1.05);
+}
+
+.student-card h4 {
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.task-button,
+.accomplish-button {
+    width: 80%;
+    margin: 0.3em 0;
+    padding: 0.5em;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-button {
+    background-color: #ff9f43;
+    color: #fff;
+}
+
+.task-button:hover {
+    background-color: #e57c1a;
+}
+
+.accomplish-button {
+    background-color: #34d399;
+    color: #fff;
+}
+
+.accomplish-button:hover {
+    background-color: #2a9d8f;
+}

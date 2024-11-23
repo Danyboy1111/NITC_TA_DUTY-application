@@ -1,0 +1,256 @@
+/* Dashbs.css */
+
+/* General dashboard container */
+.student-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.student-dashboard h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.student-image {
+    display: block;
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Roll info */
+.student-dashboard p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+    background-color: #45a049;
+}
+
+/* Task list inside a section */
+.student-list {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Individual Task Card */
+.task-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 5px 0;
+    transition: transform 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h4 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+}
+
+.task-card p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Buttons inside Task Card */
+.task-card button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+    margin-left: 5px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-card .submit-button {
+    background-color: #007bff;
+}
+/* General button styling for Task Card buttons */
+.task-card button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+    margin-left: 5px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Smaller style for the 'Ask Accomplishment' button */
+.task-card .accomplish-button {
+    background-color: #f44336;
+    padding: 4px 8px; /* Smaller padding */
+    font-size: 0.8em;  /* Slightly smaller font */
+}
+
+/* Hover effect */
+.task-card button:hover {
+    opacity: 0.85;
+}
+
+
+@media (max-width: 600px) {
+    .student-dashboard {
+        padding: 10px;
+    }
+
+    .dropdown-button, .task-card button {
+        font-size: 1em;
+    }
+
+    .task-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* General dashboard styling */
+.student-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.student-dashboard h2 {
+    text-align: center;
+    color: #333;
+}
+
+.student-image {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Dropdown button */
+.dropdown-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.dropdown-button:hover {
+    background-color: #0056b3;
+}
+
+/* Task list */
+.task-list {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Task card */
+.task-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.task-message {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Task actions (buttons) */
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-button,
+.accomplish-button {
+    flex: 1;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.accomplish-button {
+    background-color: #ffc107;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.accomplish-button:hover {
+    background-color: #e0a800;
+}

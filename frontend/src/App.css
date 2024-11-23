@@ -1,0 +1,106 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url(https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbGxlZ2UlMjBhcHB8ZW58MHx8MHx8fDA%3D) no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
+
+.app-header {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 128, 0.8); /* Navy blue with slight transparency */
+    color: #8b6464;
+    border-radius: 8px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for readability */
+}
+
+.card-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(34, 42, 151, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.login-button, .signup-button {
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth hover and click effects */
+}
+
+
+.login-button {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.signup-button {
+    background-color: #008CBA;
+    color: #fff;
+}
+/* Hover effect */
+.login-button:hover {
+    background-color: #047009; /* Slightly lighter green for hover */
+}
+
+.signup-button:hover {
+    background-color: #042f43; /* Slightly lighter blue for hover */
+}
+
+/* Active (click) effect */
+.login-button:active, .signup-button:active {
+    transform: scale(0.95); /* Shrinks the button slightly on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow when pressed */
+}
